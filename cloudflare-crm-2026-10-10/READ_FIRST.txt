@@ -1,0 +1,27 @@
+SYNC WAVE Academy · CRM update · 10 October 2026
+
+Existing destination: academy.thesyncwave.com
+Cloudflare Worker: sync-wave-academy-v2
+Account: 0c6a987a2cbac1c497e8b2b1001bf135
+
+এটি server-সহ Cloudflare Worker। Static Pages drag-and-drop ZIP upload নয়।
+Node.js 22.13 বা নতুন version দিয়ে এই folder-এ:
+  npm install
+  npx wrangler login
+  npm run check
+  npm run deploy
+
+Deploy command বর্তমান Worker ও academy.thesyncwave.com route আপডেট করবে।
+আগের Supabase secret bindings রাখা হবে। Privacy-hash salt না থাকলে স্বয়ংক্রিয়ভাবে তৈরি হবে; কোনো secret দেখাবে না।
+
+Production database-এ manual sale migration ইতিমধ্যেই প্রয়োগ করা হয়েছে। backend folder-এর SQL শুধু reference/recovery-এর জন্য।
+Customer records এই ZIP-এ নেই; production database-এ আছে।
+নতুন UI: Portal > Add manual sale; CRM / Hisab; Release Center.
+Save manual sale নিজে email পাঠায় না। Orders > Approve / Send access দিয়ে delivery শুরু করুন।
+আগে access দেওয়া হয়ে থাকলে Delivered history বাছুন; আবার email পাঠাবে না।
+CRM > Manage থেকে approve/reject, access remove, archive ও restore ব্যবহার করুন।
+Release Center-এ tool বাছুন > template edit > draft save > recipient count > confirm > queue.
+Sent মানে provider গ্রহণ করেছে; inbox/read/bounce tracking যুক্ত নেই। ৫ মিনিটের নিশ্চয়তা নেই।
+
+Owner login করে manual form দিয়ে Nafiz-এর বাস্তব অর্ডার সেভ, CRM drawer ও দুই tool-এর draft/recipient preview পরীক্ষা পাস করেছে।
+Production website-এ এই নতুন build এখনও publish করা হয়নি। Deploy-এর পর custom-domain checkout ও owner sign-in যাচাই করুন।

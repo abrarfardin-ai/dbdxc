@@ -1,0 +1,38 @@
+{
+  "name": "sync-wave-academy-v2",
+  "main": "server/index.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "no_bundle": true,
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.js",
+        "**/*.mjs"
+      ],
+      "fallthrough": true
+    }
+  ],
+  "assets": {
+    "directory": "./client",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "NEXT_PUBLIC_APP_ENV": "production",
+    "NEXT_PUBLIC_SITE_URL": "https://academy.thesyncwave.com",
+    "PUBLIC_SITE_URL": "https://academy.thesyncwave.com"
+  },
+  "account_id": "0c6a987a2cbac1c497e8b2b1001bf135",
+  "routes": [
+    {
+      "pattern": "academy.thesyncwave.com/*",
+      "zone_id": "05947444997310e0928aaff60953a904"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sync-wave-cloudflare-release",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy --keep-vars",
+    "predeploy": "node prepare-deploy.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.92.0"
+  }
+}

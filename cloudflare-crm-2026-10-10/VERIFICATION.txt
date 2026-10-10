@@ -1,0 +1,14 @@
+10 October 2026
+PASS: TypeScript check and production build.
+PASS: 80 automated tests; including manual-sale DB test and payment-history correction.
+PASS: Owner-only RPC, anonymous execute denied, retry idempotency, duplicate email/product and transaction protection, contact-edit audit.
+PASS: Cloudflare Worker deployment dry-run.
+PASS: Local production preview: 11 public/portal pages and catalog HTTP 200; quote endpoint checked separately.
+Production imports: SWA-20261010-051, -052, -053, -054. 4500 BDT each. Catalog now InstaWave 12 / Lead Data Tools 25 verified customers.
+No new customer emails sent by this historical import.
+Eamin: prior access recorded from owner's statement. Payment method unknown, not invented.
+All four customers: owner confirmed previous payment and Drive access. No delivery was resent. Purchase date labels retained; Ariyan is month-only August 2026.
+PASS: authenticated owner browser test; Nafiz entered through the manual form, CRM Manage drawer opened; persistent editable drafts saved with eligible audiences 12 and 25. No bulk email sent.
+Pending: inbox/read/bounce integration, full inbound-mail unibox, deployment/custom-domain checks.
+Existing email automation had owner-only end-to-end verification on 9 October; it was not resent to real customers in this update.
+This is not a zero-defect, unlimited-volume, inbox-delivery or five-minute guarantee.
